@@ -1,0 +1,16 @@
+Hypertext Transfer Protocol (HTTP)
+HTTP was invented alongside HTML to create the first interactive,designed to enable communications between clients and servers.
+HTTP works as a request-response protocol between a client and server.
+A web browser may be the client, and an application on a computer that hosts a web site may be the server.
+
+As a request-response protocol, HTTP gives users a way to interact with web resources such as HTML files by transmitting hypertext messages between clients and servers. HTTP clients generally use Transmission Control Protocol (TCP) connections to communicate with servers.
+
+HTTP utilizes specific request methods in order to perform various tasks.
+The most common methods for HTTP is:(GET and POST).
+
+GET requests a specific resource in its entirety and request data from a specified resource.
+
+
+POST adds content, messages or data to a new page under an existing web resource, sends data to a server to create/update a resource.
+
+The data sent to the server with POST is stored in the request body of the HTTP request.

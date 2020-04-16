@@ -1,0 +1,9 @@
+Simply:
+Encryption,Encoding and Hashing are techniques used for converting the format of data.
+These methods offer various levels of security to data that has been transformed.
+
+Encoding: transforms data to other formatting using a scheme that is publicly available so that it can easily be reversed. This special format makes it usable by external processes.
+
+Hashing: isn't reversible as encryption and encoding, it's meant to keep file secure by protecting data such as strings (passwords usually). it converts user input into a fixed size output.
+
+Encryption: is the process of transforming information using an algorithm. by changing it to plain text into cipher text so that only authorized entities can understand it.

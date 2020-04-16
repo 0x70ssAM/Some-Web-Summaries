@@ -1,0 +1,21 @@
+The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like catreloaded.com or Yasserhatesme.org Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.
+
+The process of DNS resolution involves converting a hostname (such as www.elsenbary.com) into a computer-friendly IP address (such as 127.0.0.1). An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device - like a street address is used to find a particular home. When a user wants to load a webpage, a translation must occur between what a user types into their web browser (example.com) and the machine-friendly address necessary to locate the example.com webpage.
+
+Subdomain takeover is a process of registering a non-existing domain name to gain control over another domain, Subdomain takeover attacks are a class of security issues where an attacker is able to seize control of an organization's subdomain via cloud services like AWS or Azure. They commonly happen when web projects are ended but the subdomain DNS entries are not fully shut down.
+
+Record Types:
+
+CNAME subdomain takeover. One of the primary types of CNAME subdomain takeover is the scenario when a canonical domain name is a regular Internet domain.
+
+Domain name (e.g., sub.example.com) uses a CNAME record to another domain (e.g., sub.example.com CNAME anotherdomain.com).
+At some point in time, anotherdomain.com expires and is available for registration by anyone.
+
+Since the CNAME record is not deleted from example.com DNS zone, anyone who registers anotherdomain.com has full control over sub.example.com until the DNS record is present.
+
+Subdomain takeover is not limited to CNAME records. NS, MX and even A records (which are not subject to this post) are affected as well. This post deals primarily with CNAME records. However, use cases for NS and MX records are presented where needed.
+
+
+MX subdomain takeover. Compared to NS and CNAME subdomain takeovers, MX subdomain takeover has the lowest impact. Since MX records are used only to receive e-mails, gaining control over canonical domain name in MX record only allows an attacker to receive e-mails addressed to source domain name. Although the impact is not as significant as for CNAME or NS subdomain takeover, MX subdomain takeover might play a role in spear phishing attacks and intellectual property stealing.
+
+PTR records are used for the Reverse DNS (Domain Name System) lookup. Using the IP address you can get the associated domain/hostname.

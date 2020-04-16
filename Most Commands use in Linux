@@ -1,0 +1,33 @@
+apt-get update // update Linux
+apt-get upgrade // upgrade
+man // manual help
+tcpdump
+apt-cache search
+apt-get install
+apt-get autoremove
+ls -lah // list with more details
+locate
+find
+curl //transfer data to or from a server without user interaction
+wget //download otherwise curl
+touch //create emtpy files
+>  //override
+>> //append
+nano //editor
+echo //print
+piping | // make the first input as output to the second input.
+grep //filter searches a file for a particular pattern
+-i //ignore insenstive cases
+; / && //more than on command in same line
+head
+tail
+sort
+tee //save output in txt
+ps aux //print all processes
+kill // kill the process
+df -h //used from harddisk
+top //used from MEM and CPU
+su //switvh user
+chown //change ownership
+nslookup site.com // to know ip of the site
+dig //querying DNS name servers or information about various DNS records.
